@@ -24,12 +24,17 @@ console.log(nums);
 
 const sayHello = name => console.log(`Hello ${name}`);
 
-sayHello("James");
+// sayHello("James");
+
+const fruits = ["Apples", "Oranges", "Grapes"];
 
 // FOREACH
+fruits.forEach((fruit, index) => console.log(fruit + index));
 
 // MAP
+const singleFruit = fruits.map(fruit => fruit.slice(0, -1).toUpperCase());
 
+console.log(singleFruit);
 // FILTER
 
 // SPREAD
