@@ -1,15 +1,15 @@
 // CONST & LET
-let name = "John";
+let name1 = "John";
 let test;
 
-name = "Jack";
+name1 = "Jack";
 
 const person = {
   name: "John",
   age: 33
 };
 
-person.name = "jack";
+person.name1 = "jack";
 
 const nums = [1, 2, 3, 4];
 nums.push(5);
@@ -51,6 +51,9 @@ console.log(people2);
 
 const arr = [1, 2, 3];
 const arr2 = [...arr, 4];
+const arr3 = [...arr.filter(num => num !== 2)];
+
+console.log(arr3);
 
 const personTemp = {
   name: "brad",
@@ -62,9 +65,23 @@ const newPerson = {
   email: "brad@gmail.com"
 };
 
-console.log(newPerson);
+// console.log(newPerson);
 
 // DESTRUCTURING
+
+const profile = {
+  name: "john doe",
+  address: {
+    street: "40 Main St",
+    city: "Boston"
+  },
+  hobbies: ["movies", "music"]
+};
+
+const { name, address, hobbies } = profile;
+const { street, city } = address;
+
+console.log("Name is: " + name, street, city, hobbies[0]);
 
 // CLASSES
 
