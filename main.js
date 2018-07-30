@@ -49,6 +49,21 @@ console.log(people2);
 
 // SPREAD
 
+const arr = [1, 2, 3];
+const arr2 = [...arr, 4];
+
+const personTemp = {
+  name: "brad",
+  age: 36
+};
+
+const newPerson = {
+  ...person,
+  email: "brad@gmail.com"
+};
+
+console.log(newPerson);
+
 // DESTRUCTURING
 
 // CLASSES
