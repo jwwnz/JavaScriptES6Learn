@@ -18,11 +18,13 @@ console.log(nums);
 
 // ARROW FUNCTIONS
 
-function sayHello() {
-  console.log("hello");
-}
+// function sayHello() {
+//   console.log("hello");
+// }
 
-sayHello();
+const sayHello = name => console.log(`Hello ${name}`);
+
+sayHello("James");
 
 // FOREACH
 
