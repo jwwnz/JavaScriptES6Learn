@@ -84,7 +84,36 @@ const { street, city } = address;
 console.log("Name is: " + name, street, city, hobbies[0]);
 
 // CLASSES
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 
-// SUBCLASSES
+  greet() {
+    return `Hello, my name is ${this.name} and I am ${this.age}`;
+  }
+}
+
+const person1 = new Person("John", 28);
+const person2 = new Person("Sally", 35);
+
+console.log(person1.greet());
+
+// SUBCLASSES (extending another class)
+class Customer extends Person {
+  constructor(name, age, balance) {
+    super(name, age);
+    this.balance = balance;
+  }
+
+  info() {
+    return `${this.name} owes ${this.balance}.00`;
+  }
+}
+
+const customer1 = new Customer("Kevin", 32, 300);
+
+console.log(customer1.info());
 
 // MODULES
